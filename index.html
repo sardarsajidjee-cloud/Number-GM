@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="File.css">
+</head>
+<body>
+
+  <div class="game">
+    <h2>Number Guessing Game 🎯</h2>
+
+    <select id="level" onchange="setLevel()">
+      <option value="">Select Level</option>
+      <option value="easy">Easy</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <p id="info">Choose difficulty to start</p>
+
+    <input type="number" id="guessInput" placeholder="Enter number" disabled>
+    <button onclick="checkGuess()" disabled id="guessBtn">Guess</button>
+
+    <p id="message"></p>
+    <p id="attempts"></p>
+
+    <button onclick="resetGame()">Restart 🔄</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+      </html>
